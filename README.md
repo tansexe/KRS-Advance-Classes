@@ -25,3 +25,24 @@ The KRS-Advance-Frontend contains the frontend code for the classes.
 3. Login Page
 <img width="960" alt="image" src="https://github.com/tansexe/KRS-Advance-Classes/assets/112875959/4867e4ec-b45c-41be-b936-b4f122ddcc56">
 
+## Backend Documentation: 
+The Backend-E-attendance folder contains the folder for the backend.
+It would locally run on localhost: 5000. 
+
+### Routing Guide
+
+This project has the following endpoints:
+
+### User
+
+| Methods | Route                 | Description              | Request                                        | Response                                                           |
+| ------- | --------------------- | ------------------------ | ---------------------------------------------- | ------------------------------------------------------------------ |
+| GET    | `/users/getAllUsers` | To get the info of all users.            | _id, Username, RollNo, Hostel, Email, Password, Phone                          | All the User details are sent.  |                                                                   
+| POST     | `/users/Signup`       | Registering all the users            | Username, RollNo, Hostel, Email, Password, Phone  | success: True/False |
+| POST   | `/users/Login`     |  Logging all the users |    email, password, Username | message: User found or not| 
+
+## Troubleshooting
+If you encounter any issues while using the Hostel-E-attendance, consider the following troubleshooting steps:
+1. Check Dependencies: Ensure you have installed all required dependencies.
+2. Review Error Messages: If you encounter any errors, carefully review the error messages to identify the source of the issue.
+
